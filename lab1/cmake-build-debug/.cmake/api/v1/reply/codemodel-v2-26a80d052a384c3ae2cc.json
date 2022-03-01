@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "lb1::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-lb1-Debug-dea659ee206ca06d2a76.json",
+					"jsonFile" : "target-lb1-Debug-2b6668b3594a126de395.json",
 					"name" : "lb1",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/ardonplay/Documents/Developer/C++_Codes/OaIp/lb1/cmake-build-debug",
-		"source" : "/Users/ardonplay/Documents/Developer/C++_Codes/OaIp/lb1"
+		"build" : "/Users/ardonplay/Documents/Developer/C++_Codes/OAiP/lab1/cmake-build-debug",
+		"source" : "/Users/ardonplay/Documents/Developer/C++_Codes/OAiP/lab1"
 	},
 	"version" : 
 	{

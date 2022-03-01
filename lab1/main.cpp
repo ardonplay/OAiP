@@ -1,68 +1,11 @@
 #include <iostream>
 #include <string>
+#include "basis.h"
+#include <fstream>
 using namespace std;
 
-struct base{
-    string name, surname;
-    double physics = 0, informatics = 0, mathematics = 0, chemistry = 0, average_score = 0;
-    int group = 0;
-};
-
-void menu(){
-    cout<<"\tList of commands\t\n"
-          "------------------------------\n"
-          "1.Create new data of student"
-          "\n------------------------------\n"
-          "2.List of students"
-          "\n------------------------------\n"
-          "3.Edit student data"
-          "\n------------------------------\n"
-          "4.Delete student"
-          "\n------------------------------"<<endl;
-    cout<<">>>";
-}
-
-base new_student(){
-    string choose;
-    base students;
-    cout<<"Name: ";
-    cin>>choose;
-    students.name = choose;
-    cout<<"Surname: ";
-    cin>>choose;
-    students.surname = choose;
-    cout<<"Group: ";
-    cin>>choose;
-    students.group = stoi(choose);
-    cout<<"Physics: ";
-    cin>>choose;
-    students.physics = stoi(choose);
-    cout<<"Mathematics: ";
-    cin>>choose;
-    students.mathematics = stoi(choose);
-    cout<<"Chemistry: ";
-    cin>>choose;
-    students.chemistry = stoi(choose);
-    cout<<"Informatics: ";
-    cin>>choose;
-    students.informatics = stoi(choose);
-    students.average_score = (students.informatics + students.physics + students.chemistry + students.mathematics)/4.;
-    return students;
-}
-
-void list(base students){
-    cout<<endl;
-    cout<<"Name: "<<students.name<<endl;
-    cout<<"Surname: "<<students.surname<<endl;
-    cout<<"Group: "<<students.group<<endl;
-    cout << "Physics: " << students.physics << endl;
-    cout<<"Mathematics: "<<students.mathematics<<endl;
-    cout<<"Chemistry: "<<students.chemistry<<endl;
-    cout<<"Informatics: "<<students.informatics<<endl;
-    cout<<"Average score: "<<students.average_score<<endl;
-}
-
 int main() {
+
     string choose;
 
    base *students = new base [100];
@@ -80,6 +23,10 @@ int main() {
             }
 
             case 2: {
+                if(number == 0){
+                    cout<<"\nThere are no student in the base!\n"<<endl;
+                   break;
+                }
                 for(int i = 0; i < number; i++) {
                     list(students[i]);
                 }
@@ -96,13 +43,57 @@ int main() {
             }
 
             case 4: {
+                cout<<"What student do you wanna delete?\n>>>";
+                cin>>choose;
+                number = delete_student(choose, number,students);
                 break;
             }
 
-            case 5: {
+            case 5:{
+                individual_task(students, number);
+                break;
+            }
+            case 6:{
+                ifstream file;
+                cout<<"What's the destination of the file?\n>>>";
+                cin>>choose;
+                string lines;
+                int number_2 = 1;
+                file.open(choose);
+                if(file)
+                    cout<<"File "<<choose<<" is opened!"<<endl;
+                else {
+                    cout << "Houston, we have troubles with opening file!" << endl;
+                }
+                while (!file.eof())
+                {
+                    getline(file, lines);
+                    number_2++;
+                }
+                file.close();
+                number_2 = number_2 / 9;
+                file.open(choose);
+                for(int i = 0; i < number_2; i++){
+                    students[i] = f_new_student(file);
+                }
+                file.close();
+                number = number_2;
+                break;
+            }
+            case 7:{
+                cout<<"Whats the destination of the file to save?\n>>>";
+                cin >> choose;
+                ofstream file(choose);
+                for(int i = 0; i < number; i++){
+                    save(students[i], file);
+                }
+                break;
+            }
+            case 8: {
                 cout<<"GoodBye!"<<endl;
                return 0;
             }
+
             default: {
                 menu();
                 cin>>choose;
