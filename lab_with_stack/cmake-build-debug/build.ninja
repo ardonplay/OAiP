@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: lb1
+# Project: lab_with_stack
 # Configurations: Debug
 # =============================================================================
 
@@ -39,13 +39,13 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /Users/ardonplay/Documents/Developer/C++_Codes/OAiP/lab2/cmake-build-debug/
+cmake_ninja_workdir = /Users/ardonplay/Documents/Developer/C++_Codes/OAiP/lab_with_stack/cmake-build-debug/
 
 #############################################
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/ardonplay/Documents/Developer/C++_Codes/OAiP/lab2/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/ardonplay/Documents/Developer/C++_Codes/OAiP/lab2 -B/Users/ardonplay/Documents/Developer/C++_Codes/OAiP/lab2/cmake-build-debug
+  COMMAND = cd /Users/ardonplay/Documents/Developer/C++_Codes/OAiP/lab_with_stack/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/ardonplay/Documents/Developer/C++_Codes/OAiP/lab_with_stack -B/Users/ardonplay/Documents/Developer/C++_Codes/OAiP/lab_with_stack/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -57,53 +57,45 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/ardonplay/Documents/Developer/C++_Codes/OAiP/lab2/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/ardonplay/Documents/Developer/C++_Codes/OAiP/lab_with_stack/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
 build edit_cache: phony CMakeFiles/edit_cache.util
 
 # =============================================================================
-# Object build statements for EXECUTABLE target lb1
+# Object build statements for EXECUTABLE target lab_with_stack
 
 
 #############################################
-# Order-only phony target for lb1
+# Order-only phony target for lab_with_stack
 
-build cmake_object_order_depends_target_lb1: phony || CMakeFiles/lb1.dir
+build cmake_object_order_depends_target_lab_with_stack: phony || CMakeFiles/lab_with_stack.dir
 
-build CMakeFiles/lb1.dir/main.cpp.o: CXX_COMPILER__lb1_Debug /Users/ardonplay/Documents/Developer/C++_Codes/OAiP/lab2/main.cpp || cmake_object_order_depends_target_lb1
-  DEP_FILE = CMakeFiles/lb1.dir/main.cpp.o.d
+build CMakeFiles/lab_with_stack.dir/main.cpp.o: CXX_COMPILER__lab_with_stack_Debug /Users/ardonplay/Documents/Developer/C++_Codes/OAiP/lab_with_stack/main.cpp || cmake_object_order_depends_target_lab_with_stack
+  DEP_FILE = CMakeFiles/lab_with_stack.dir/main.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -std=gnu++14
-  OBJECT_DIR = CMakeFiles/lb1.dir
-  OBJECT_FILE_DIR = CMakeFiles/lb1.dir
-  TARGET_COMPILE_PDB = CMakeFiles/lb1.dir/
-  TARGET_PDB = lb1.pdb
-
-build CMakeFiles/lb1.dir/basis.cpp.o: CXX_COMPILER__lb1_Debug /Users/ardonplay/Documents/Developer/C++_Codes/OAiP/lab2/basis.cpp || cmake_object_order_depends_target_lb1
-  DEP_FILE = CMakeFiles/lb1.dir/basis.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -std=gnu++14
-  OBJECT_DIR = CMakeFiles/lb1.dir
-  OBJECT_FILE_DIR = CMakeFiles/lb1.dir
-  TARGET_COMPILE_PDB = CMakeFiles/lb1.dir/
-  TARGET_PDB = lb1.pdb
+  OBJECT_DIR = CMakeFiles/lab_with_stack.dir
+  OBJECT_FILE_DIR = CMakeFiles/lab_with_stack.dir
+  TARGET_COMPILE_PDB = CMakeFiles/lab_with_stack.dir/
+  TARGET_PDB = lab_with_stack.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target lb1
+# Link build statements for EXECUTABLE target lab_with_stack
 
 
 #############################################
-# Link the executable lb1
+# Link the executable lab_with_stack
 
-build lb1: CXX_EXECUTABLE_LINKER__lb1_Debug CMakeFiles/lb1.dir/main.cpp.o CMakeFiles/lb1.dir/basis.cpp.o
+build lab_with_stack: CXX_EXECUTABLE_LINKER__lab_with_stack_Debug CMakeFiles/lab_with_stack.dir/main.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk
-  OBJECT_DIR = CMakeFiles/lb1.dir
+  OBJECT_DIR = CMakeFiles/lab_with_stack.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/lb1.dir/
-  TARGET_FILE = lb1
-  TARGET_PDB = lb1.pdb
+  TARGET_COMPILE_PDB = CMakeFiles/lab_with_stack.dir/
+  TARGET_FILE = lab_with_stack
+  TARGET_PDB = lab_with_stack.pdb
 
 # =============================================================================
 # Target aliases.
@@ -114,9 +106,9 @@ build lb1: CXX_EXECUTABLE_LINKER__lb1_Debug CMakeFiles/lb1.dir/main.cpp.o CMakeF
 # =============================================================================
 
 #############################################
-# Folder: /Users/ardonplay/Documents/Developer/C++_Codes/OAiP/lab2/cmake-build-debug
+# Folder: /Users/ardonplay/Documents/Developer/C++_Codes/OAiP/lab_with_stack/cmake-build-debug
 
-build all: phony lb1
+build all: phony lab_with_stack
 
 # =============================================================================
 # Built-in targets

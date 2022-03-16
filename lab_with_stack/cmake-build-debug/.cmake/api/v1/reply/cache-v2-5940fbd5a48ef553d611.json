@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/ardonplay/Documents/Developer/C++_Codes/OAiP/lab2/cmake-build-debug"
+			"value" : "/Users/ardonplay/Documents/Developer/C++_Codes/OAiP/lab_with_stack/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -515,7 +515,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/ardonplay/Documents/Developer/C++_Codes/OAiP/lab2"
+			"value" : "/Users/ardonplay/Documents/Developer/C++_Codes/OAiP/lab_with_stack"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -795,7 +795,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "lab2"
+			"value" : "lab_with_stack"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1078,7 +1078,7 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "lab2_BINARY_DIR",
+			"name" : "lab_with_stack_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1087,10 +1087,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/ardonplay/Documents/Developer/C++_Codes/OAiP/lab2/cmake-build-debug"
+			"value" : "/Users/ardonplay/Documents/Developer/C++_Codes/OAiP/lab_with_stack/cmake-build-debug"
 		},
 		{
-			"name" : "lab2_IS_TOP_LEVEL",
+			"name" : "lab_with_stack_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1102,7 +1102,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "lab2_SOURCE_DIR",
+			"name" : "lab_with_stack_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1111,7 +1111,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/ardonplay/Documents/Developer/C++_Codes/OAiP/lab2"
+			"value" : "/Users/ardonplay/Documents/Developer/C++_Codes/OAiP/lab_with_stack"
 		}
 	],
 	"kind" : "cache",
